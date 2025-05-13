@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.0.0...v5.1.0) (2025-05-13)
+
+
+### Features
+
+* SEC-123 implement new API ([71e35d2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/71e35d271ef7975e7d3782e85fd94d72258c60f3)), closes [#3](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/3) [#2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/2)
+
 # [5.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v4.0.0...v5.0.0) (2025-05-13)
 
 
