@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v2.0.1...v2.0.2) (2025-05-13)
+
+
+### Bug Fixes
+
+* thêm tính năng lọc ([cda36b3](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/cda36b35f4a3cde77e495b5cb65c9de5f33461f6))
+
 ## [2.0.1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v2.0.0...v2.0.1) (2025-05-13)
 
 
