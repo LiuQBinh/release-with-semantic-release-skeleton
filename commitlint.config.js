@@ -29,8 +29,6 @@ module.exports = {
             .filter(type => typeof type === 'string' || (Array.isArray(type) && type[1] !== false))
             .map(type => typeof type === 'string' ? type : type[0]);
 
-            console.log('parsed', parsed);
-            
           const isValidType = types.some(type => {
             if (typeof type === 'string') {
               return parsed.raw.startsWith(type);
