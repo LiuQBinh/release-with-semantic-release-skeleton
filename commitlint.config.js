@@ -11,9 +11,9 @@ module.exports = {
     'type-empty': [2, 'never'],
     'subject-empty': [2, 'never'],
     'type-enum': [2, 'always', [
-      'feat',    // New feature (Minor version)
-      'fix',     // Bug fix (Patch version)
-      'perf',    // Performance improvements
+      // 'feat',    // New feature (Minor version)
+      // 'fix',     // Bug fix (Patch version)
+      // 'perf',    // Performance improvements
       'docs',    // Documentation changes
       'style',   // Code style changes
       'refactor',// Code refactoring
