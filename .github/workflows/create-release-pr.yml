@@ -11,6 +11,8 @@ on:
 jobs:
   create-pr:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
 
     steps:
     - name: Checkout repository
@@ -27,6 +29,8 @@ jobs:
         git config user.email "bot@example.com"
 
     - name: Update CHANGELOG.md from GitHub Release
+      env:
+        GH_TOKEN: ${{ github.token }}
       run: |
         gh release view ${{ github.event.release.tag_name }} --json body -q '.body' > CHANGELOG.md
 
