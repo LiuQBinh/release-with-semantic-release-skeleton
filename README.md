@@ -32,10 +32,10 @@ The project follows the [Conventional Commits](https://www.conventionalcommits.o
 |------------|---------------------------|----------------|
 | `feat`     | New feature               | Minor (1.x.0)  |
 | `fix`      | Bug fix                   | Patch (1.0.x)  |
+| `perf`     | Performance improvements  | None  (1.0.x)  |
 | `docs`     | Documentation changes     | None           |
 | `style`    | Code style changes        | None           |
 | `refactor` | Code refactoring          | None           |
-| `perf`     | Performance improvements  | None  (1.0.x)  |
 | `test`     | Adding or modifying tests | None           |
 | `chore`    | Maintenance tasks         | None           |
 | `ci`       | CI configuration changes  | None           |
