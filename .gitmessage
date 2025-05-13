@@ -1,0 +1,25 @@
+# <type>: <subject>
+#
+# <body>
+#
+# <footer>
+#
+# Types:
+#   feat     (Minor version) A new feature
+#   fix      (Patch version) A bug fix
+#   perf     Performance improvements
+#   docs     Documentation changes
+#   style    Code style changes (formatting, etc)
+#   refactor Code refactoring
+#   test     Adding or modifying tests
+#   chore    Maintenance tasks
+#   ci       CI configuration changes
+#
+# Examples:
+#   feat: add new authentication system
+#   fix: resolve login validation issue
+#   docs: update API documentation
+#   feat: implement new API
+#   BREAKING CHANGE: API interface has changed
+#
+# Note: For breaking changes, add "BREAKING CHANGE:" in the body 

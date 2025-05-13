@@ -22,23 +22,22 @@ module.exports = {
       'ci'       // CI configuration changes
     ]],
     'type-case': [2, 'always', 'lower-case'],
-    'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']],
-    'type-allowed-on-branch': [2, 'always', {
-      'main': ['feat', 'fix', 'perf']
-    }]
+    'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']]
   },
   plugins: [
     {
       rules: {
         'type-allowed-on-branch': (parsed, when, value) => {
-          // // Skip validation if type is empty or null
-          // if (!parsed.type) return [true];
-          
           const branchName = process.env.GITHUB_REF?.replace('refs/heads/', '') || 
                            process.env.CI_COMMIT_REF_NAME || 
                            require('child_process').execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
           
-          const allowedTypes = value[branchName];
+          // Define allowed types for each branch
+          const branchRules = {
+            'main': ['feat', 'fix', 'perf']
+          };
+          
+          const allowedTypes = branchRules[branchName];
           if (!allowedTypes) return [true];
           
           return [
