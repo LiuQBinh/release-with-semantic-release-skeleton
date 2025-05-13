@@ -1,23 +1,51 @@
 module.exports = {
-  extends: ['@commitlint/config-conventional'],
-  helpUrl: `\n\n      URL:\n      https://github.com/conventional-changelog/commitlint/#what-is-commitlint\n\n      Example: \n      git commit -m "docs: update README with new setup instructions"`,
+  // parserPreset: {
+  //   parserOpts: {
+  //     headerPattern: /^(([\w-]*(.*))|([\w-]*)(?:\((.*)\))?!?:(.*))$/,
+  //   },
+  // },
   rules: {
-    'type-empty': [2, 'never'],
-    'subject-empty': [2, 'never'],
-    'ignore-merge-commits': [2, 'never'],
-    'type-enum': [2, 'always', [
-      // 'feat',    // New feature (Minor version)
-      // 'fix',     // Bug fix (Patch version)
-      // 'perf',    // Performance improvements
-      'docs',    // Documentation changes
-      'style',   // Code style changes
-      'refactor',// Code refactoring
-      'test',    // Adding or modifying tests
-      'chore',   // Maintenance tasks
-      'ci'       // CI configuration changes
+    'type-enum': [0],
+    'type-case': [0],
+    'function-rules/type-enum': [2, 'always', [
+      'build',
+      'chore',
+      'ci',
+      'docs',
+      ['hotfix', false],
+      'refactor',
+      'revert',
+      'style',
+      'test',
+      /^SEC-\d+/i,
+      /^release\/SEC-\d+/i,
     ]],
-    'type-case': [2, 'always', 'lower-case'],
-    'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']],
-    'body-max-line-length': [2, 'always', 300]
-  }
-};
+  },
+  plugins: [
+    {
+      rules: {
+        'function-rules/type-enum': (parsed, _, types) => {
+          const validTypes = types
+            .filter(type => typeof type === 'string' || (Array.isArray(type) && type[1] !== false))
+            .map(type => typeof type === 'string' ? type : type[0]);
+
+          const isValidType = types.some(type => {
+            if (typeof type === 'string') {
+              return parsed.raw.startsWith(type);
+            }
+            if (Array.isArray(type)) {
+              if (type[1] === false) return false;
+              return parsed.raw.startsWith(type[0]);
+            }
+            return type.test && type.test(parsed.raw);
+          });
+
+          return [
+            isValidType,
+            `Commit type must be one of: ${validTypes.join(', ')} or match pattern SEC-1234`
+          ];
+        },
+      },
+    },
+  ],
+}
