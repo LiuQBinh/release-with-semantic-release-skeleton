@@ -1,6 +1,11 @@
 // release.config.js
 module.exports = {
     branches: ["main"],
+    "releaseRules": [
+      { "type": "feat", "release": "minor" },
+      { "type": "fix", "release": "patch" },
+      { "breaking": true, "release": "major" }
+    ],
     plugins: [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
