@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.4.0...v6.0.0) (2025-05-13)
+
+
+### Features
+
+* add new API ([ae6023c](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/ae6023cdea291ea781482d253a67ee318f152f59))
+
+
+### BREAKING CHANGES
+
+* API interface has changed
+
 # [5.4.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.3.0...v5.4.0) (2025-05-13)
 
 
