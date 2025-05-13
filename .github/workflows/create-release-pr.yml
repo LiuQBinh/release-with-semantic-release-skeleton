@@ -1,0 +1,50 @@
+name: Create Release PR
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Configure Git
+      run: |
+        git config user.name "release-bot"
+        git config user.email "bot@example.com"
+
+    - name: Update CHANGELOG.md from GitHub Release
+      run: |
+        gh release view ${{ github.event.release.tag_name }} --json body -q '.body' > CHANGELOG.md
+
+    - name: Update package.json version
+      run: |
+        npm version ${{ github.event.release.tag_name }} --no-git-tag-version
+
+    - name: Commit changes
+      run: |
+        git checkout -b release/update-${{ github.event.release.tag_name }}
+        git add CHANGELOG.md package.json
+        git commit -m "chore: update changelog and version for ${{ github.event.release.tag_name }}"
+        git push origin release/update-${{ github.event.release.tag_name }}
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: release/update-${{ github.event.release.tag_name }}
+        title: 'chore: update changelog and package.json for ${{ github.event.release.tag_name }}'
+        body: |
+          This PR updates:
+          - CHANGELOG.md from release notes
+          - package.json version to match release
+        labels: release
