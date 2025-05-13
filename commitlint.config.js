@@ -4,11 +4,8 @@ module.exports = {
   rules: {
     'type-empty': [2, 'never'],
     'subject-empty': [2, 'never'],
-    'ignore-merge-commits': [2, 'never'],
     'type-enum': [2, 'always', [
-      // 'feat',    // New feature (Minor version)
-      // 'fix',     // Bug fix (Patch version)
-      // 'perf',    // Performance improvements
+      'merge',   // Merge commits
       'docs',    // Documentation changes
       'style',   // Code style changes
       'refactor',// Code refactoring
