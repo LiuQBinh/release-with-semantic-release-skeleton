@@ -1,3 +1,10 @@
+# [5.2.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.1.0...v5.2.0) (2025-05-13)
+
+
+### Features
+
+* SEC-123 release ([f75eac8](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/f75eac8c9779050b3c38d7d9a75c90b7fd620ea0))
+
 # [5.1.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.0.0...v5.1.0) (2025-05-13)
 
 
