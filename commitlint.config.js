@@ -5,7 +5,6 @@ module.exports = {
     'type-empty': [2, 'never'],
     'subject-empty': [2, 'never'],
     'type-enum': [2, 'always', [
-      'merge',   // Merge commits
       'docs',    // Documentation changes
       'style',   // Code style changes
       'refactor',// Code refactoring
@@ -15,6 +14,7 @@ module.exports = {
     ]],
     'type-case': [2, 'always', 'lower-case'],
     'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']],
-    'body-max-line-length': [2, 'always', 300]
+    'body-max-line-length': [2, 'always', 300],
+    'ignore-merge-commits': [0, 'never']
   }
 };
