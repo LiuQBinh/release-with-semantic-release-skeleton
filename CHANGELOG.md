@@ -1,3 +1,48 @@
+# [7.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v6.0.1...v7.0.0) (2025-05-13)
+
+
+### Features
+
+* a big feature ([7dc744d](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/7dc744d1e829f824b6f1475113389d58f6ce0577))
+
+
+### BREAKING CHANGES
+
+* this feature changes the core API usage
+
+## [6.0.1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v6.0.0...v6.0.1) (2025-05-13)
+
+
+### Performance Improvements
+
+* fix ([98690f5](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/98690f5eaaece88856f1c31409269a4aa3cf120c))
+
+# [6.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.4.0...v6.0.0) (2025-05-13)
+
+
+### Features
+
+* add new API ([ae6023c](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/ae6023cdea291ea781482d253a67ee318f152f59))
+
+
+### BREAKING CHANGES
+
+* API interface has changed
+
+# [5.4.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.3.0...v5.4.0) (2025-05-13)
+
+
+### Features
+
+* add new API BREAKING CHANGE: API interface has changed ([1e578af](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/1e578af102d537c0614c27f3882242ecff66dedb))
+
+# [5.3.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.2.0...v5.3.0) (2025-05-13)
+
+
+### Features
+
+* SEC-123 release ([00ba90f](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/00ba90f485f441ac460806ade28686f457d2b942))
+
 # [5.2.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.1.0...v5.2.0) (2025-05-13)
 
 

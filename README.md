@@ -28,17 +28,17 @@ This project implements an automated release workflow that:
 
 The project follows the [Conventional Commits](https://www.conventionalcommits.org/) specification. Here are the supported commit types:
 
-| Type | Description | Version Impact |
-|------|-------------|----------------|
-| `feat` | New feature | Minor (1.x.0) |
-| `fix` | Bug fix | Patch (1.0.x) |
-| `docs` | Documentation changes | None |
-| `style` | Code style changes | None |
-| `refactor` | Code refactoring | None |
-| `perf` | Performance improvements | None |
-| `test` | Adding or modifying tests | None |
-| `chore` | Maintenance tasks | None |
-| `ci` | CI configuration changes | None |
+| Type       | Description               | Version Impact |
+|------------|---------------------------|----------------|
+| `feat`     | New feature               | Minor (1.x.0)  |
+| `fix`      | Bug fix                   | Patch (1.0.x)  |
+| `docs`     | Documentation changes     | None           |
+| `style`    | Code style changes        | None           |
+| `refactor` | Code refactoring          | None           |
+| `perf`     | Performance improvements  | None  (1.0.x)  |
+| `test`     | Adding or modifying tests | None           |
+| `chore`    | Maintenance tasks         | None           |
+| `ci`       | CI configuration changes  | None           |
 
 ### Breaking Changes
 To indicate a breaking change, add `BREAKING CHANGE:` in the commit body - Major (x.0.0):
