@@ -5,6 +5,7 @@ module.exports = {
     { type: "feat", release: "minor" },
     { type: "fix", release: "patch" },
     { breaking: true, release: "major" },
+    
   ],
   plugins: [
     "@semantic-release/commit-analyzer",
