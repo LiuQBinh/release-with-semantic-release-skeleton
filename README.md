@@ -76,12 +76,12 @@ git commit -m "feat: add new API" -m "BREAKING CHANGE: API interface has changed
 
 ### Branch Types
 - `main`: Production branch, triggers releases
-- `release/*`: Release branches for feature development
-- `release/*-child`: Child branches for specific tasks
+- `release/SEC-*`: Release branches for feature development
+- `release/SEC-*-child`: Child branches for specific tasks
 
 ### Release Process
-1. Develop features in `release/*-child` branches
-2. Merge child branches into parent `release/*` branch
+1. Develop features in `release/SEC-*-child` branches
+2. Merge child branches into parent `release/SEC-*` branch
 3. Merge release branch into `main`
 4. GitHub Actions automatically triggers the release process
 
