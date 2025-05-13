@@ -35,7 +35,7 @@ The project follows the [Conventional Commits](https://www.conventionalcommits.o
 | `docs`     | Documentation changes     | None           |
 | `style`    | Code style changes        | None           |
 | `refactor` | Code refactoring          | None           |
-| `perf`     | Performance improvements  | None           |
+| `perf`     | Performance improvements  | None  (1.0.x)  |
 | `test`     | Adding or modifying tests | None           |
 | `chore`    | Maintenance tasks         | None           |
 | `ci`       | CI configuration changes  | None           |
