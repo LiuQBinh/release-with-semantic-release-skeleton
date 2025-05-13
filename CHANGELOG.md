@@ -1,3 +1,10 @@
+# [7.1.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v7.0.0...v7.1.0) (2025-05-13)
+
+
+### Features
+
+* SEC-123 release - Minor (1.x.0) ([4d2910d](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/4d2910d1119bc32e0b1e6570f563420bb8569340))
+
 # [7.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v6.0.1...v7.0.0) (2025-05-13)
 
 
