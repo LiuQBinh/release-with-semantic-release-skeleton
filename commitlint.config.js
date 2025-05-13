@@ -1,19 +1,47 @@
 module.exports = {
-  extends: ['@commitlint/config-conventional'],
-  helpUrl: `\n\n      URL:\n      https://github.com/conventional-changelog/commitlint/#what-is-commitlint\n\n      Example: \n      git commit -m "docs: update README with new setup instructions"`,
+  parserPreset: {
+    parserOpts: {
+      headerPattern: /^(([\w-]*(.*))|([\w-]*)(?:\((.*)\))?!?:(.*))$/,
+    },
+  },
   rules: {
-    'type-empty': [2, 'never'],
-    'subject-empty': [2, 'never'],
-    'type-enum': [2, 'always', [
-      'docs',    // Documentation changes
-      'style',   // Code style changes
-      'refactor',// Code refactoring
-      'test',    // Adding or modifying tests
-      'chore',   // Maintenance tasks
-      'ci'       // CI configuration changes
+    'type-enum': [0],
+    'type-case': [0],
+    'function-rules/type-enum': [2, 'always', [
+      'build',
+      'chore',
+      'ci',
+      'docs',
+      ['hotfix', false],
+      'refactor',
+      'revert',
+      'style',
+      'test',
+      /^OAM-\d+/i,
+      /^release\/OAM-\d+/i,
     ]],
-    'type-case': [2, 'always', 'lower-case'],
-    'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']],
-    'body-max-line-length': [2, 'always', 300]
-  }
-};
+  },
+  plugins: [
+    {
+      rules: {
+        'function-rules/type-enum': (a, _, types) => {
+          // in case `hotfix` no need to check OAM-\d pattern
+          return [
+            types.some(x => {
+              if (typeof x == 'string') {
+                return a.raw.startsWith(x) && /(^OAM-\d+\s*|\sOAM-\d+\s|OAM-\d+$)/i.test(a.raw)
+              } else {
+                if (typeof x[0] == 'string') {
+                  return a.raw.startsWith(x[0])
+                } else {
+                  return x.test && x.test(a.raw)
+                }
+              }
+            }),
+            `type must be one of pattern OAM-1234 OR ${types.map(e => typeof e == 'string' ? e : e[0]).join(', ')}`,
+          ]
+        },
+      },
+    },
+  ],
+}
