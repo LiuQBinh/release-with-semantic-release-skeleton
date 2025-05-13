@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v4.0.0...v5.0.0) (2025-05-13)
+
+
+### Features
+
+* a big feature ([1e8c844](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/1e8c844a06c0c098d15792b9f60b70bc9596d664))
+
+
+### BREAKING CHANGES
+
+* this feature changes the core API usage
+
 # [4.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v3.0.0...v4.0.0) (2025-05-13)
 
 
