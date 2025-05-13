@@ -15,5 +15,6 @@ module.exports = {
     'type-case': [2, 'always', 'lower-case'],
     'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']],
     'body-max-line-length': [2, 'always', 300]
+    
   }
 };
