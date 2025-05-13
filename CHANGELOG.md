@@ -1,3 +1,15 @@
+# [9.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v8.0.0...v9.0.0) (2025-05-13)
+
+
+### Features
+
+* a big feature ([9d3d4ee](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/9d3d4ee19be8a58a3ffa49f6d64d763216bba179))
+
+
+### BREAKING CHANGES
+
+* this feature changes the core API usage
+
 # [8.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v7.1.0...v8.0.0) (2025-05-13)
 
 
