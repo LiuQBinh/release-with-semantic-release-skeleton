@@ -1,9 +1,9 @@
 module.exports = {
-  parserPreset: {
-    parserOpts: {
-      headerPattern: /^(([\w-]*(.*))|([\w-]*)(?:\((.*)\))?!?:(.*))$/,
-    },
-  },
+  // parserPreset: {
+  //   parserOpts: {
+  //     headerPattern: /^(([\w-]*(.*))|([\w-]*)(?:\((.*)\))?!?:(.*))$/,
+  //   },
+  // },
   rules: {
     'type-enum': [0],
     'type-case': [0],
@@ -17,29 +17,35 @@ module.exports = {
       'revert',
       'style',
       'test',
-      /^OAM-\d+/i,
-      /^release\/OAM-\d+/i,
+      /^SEC-\d+/i,
+      /^release\/SEC-\d+/i,
     ]],
   },
   plugins: [
     {
       rules: {
-        'function-rules/type-enum': (a, _, types) => {
-          // in case `hotfix` no need to check OAM-\d pattern
+        'function-rules/type-enum': (parsed, _, types) => {
+          const validTypes = types
+            .filter(type => typeof type === 'string' || (Array.isArray(type) && type[1] !== false))
+            .map(type => typeof type === 'string' ? type : type[0]);
+
+            console.log(parsed);
+            
+          const isValidType = types.some(type => {
+            if (typeof type === 'string') {
+              return parsed.raw.startsWith(type);
+            }
+            if (Array.isArray(type)) {
+              if (type[1] === false) return false;
+              return parsed.raw.startsWith(type[0]);
+            }
+            return type.test && type.test(parsed.raw);
+          });
+
           return [
-            types.some(x => {
-              if (typeof x == 'string') {
-                return a.raw.startsWith(x) && /(^OAM-\d+\s*|\sOAM-\d+\s|OAM-\d+$)/i.test(a.raw)
-              } else {
-                if (typeof x[0] == 'string') {
-                  return a.raw.startsWith(x[0])
-                } else {
-                  return x.test && x.test(a.raw)
-                }
-              }
-            }),
-            `type must be one of pattern OAM-1234 OR ${types.map(e => typeof e == 'string' ? e : e[0]).join(', ')}`,
-          ]
+            isValidType,
+            `Commit type must be one of: ${validTypes.join(', ')} or match pattern SEC-1234`
+          ];
         },
       },
     },
