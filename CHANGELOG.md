@@ -1,3 +1,10 @@
+## [9.4.1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.4.0...v9.4.1) (2025-05-13)
+
+
+### Bug Fixes
+
+* SEC-123 resolve login bug ([cf423d3](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/cf423d358023f7b48485049cc2a6a4c390cf5451))
+
 # [9.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v8.0.0...v9.0.0) (2025-05-13)
 
 
