@@ -1,3 +1,15 @@
+# [8.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v7.1.0...v8.0.0) (2025-05-13)
+
+
+### Features
+
+* SEC-123 release ([ce381d8](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/ce381d8485eb1d21eb61908578d34685d80611db))
+
+
+### BREAKING CHANGES
+
+* API interface has changed
+
 # [7.1.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v7.0.0...v7.1.0) (2025-05-13)
 
 
