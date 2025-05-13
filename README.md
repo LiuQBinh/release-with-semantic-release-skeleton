@@ -53,18 +53,18 @@ git commit -m "feat: add new API" -m "BREAKING CHANGE: API interface has changed
 1. **Write Conventional Commit Messages**
    ```bash
    # Feature commits (minor version)
-   git commit -m "feat: add new feature"
+   git commit -m "feat: SEC-123 add new feature"
    
    # Bug fix commits (patch version)
-   git commit -m "fix: resolve login bug"
+   git commit -m "fix: SEC-123 resolve login bug"
    
    # Breaking changes (major version)
-   git commit -m "feat: implement new API" -m "BREAKING CHANGE: API interface has changed"
+   git commit -m "feat: SEC-123 implement new API" -m "BREAKING CHANGE: API interface has changed"
    
    # Other commit types
-   git commit -m "chore: update dependencies"
-   git commit -m "docs: update README"
-   git commit -m "test: add unit tests"
+   git commit -m "chore: SEC-123 update dependencies"
+   git commit -m "docs: SEC-123 update README"
+   git commit -m "test: SEC-123 add unit tests"
    ```
 
 2. **Push Changes**
