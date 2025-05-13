@@ -76,6 +76,8 @@ git commit -m "feat: add new API" -m "BREAKING CHANGE: API interface has changed
 
 ### Branch Types
 - `main`: Production branch, triggers releases
+  - Only accepts `feat`, `fix`, and `perf` commit types
+  - All other commit types should be made in feature branches
 - `release/SEC-*`: Release branches for feature development
 - `release/SEC-*-child`: Child branches for specific tasks
 
