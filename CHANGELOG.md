@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v6.0.0...v6.0.1) (2025-05-13)
+
+
+### Performance Improvements
+
+* fix ([98690f5](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/98690f5eaaece88856f1c31409269a4aa3cf120c))
+
 # [6.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v5.4.0...v6.0.0) (2025-05-13)
 
 
