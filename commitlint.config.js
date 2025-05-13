@@ -1,12 +1,6 @@
 module.exports = {
   extends: ['@commitlint/config-conventional'],
-  helpUrl: 'https://github.com/conventional-changelog/commitlint/#what-is-commitlint',
-  parserPreset: {
-    parserOpts: {
-      headerPattern: /^(\w*)(?:\((.*)\))?: (.*)$/, //Exampe: git commit -m "docs: add README"
-      headerCorrespondence: ['type', 'scope', 'subject']
-    }
-  },
+  helpUrl: `\n\n      URL:\n      https://github.com/conventional-changelog/commitlint/#what-is-commitlint\n\n      Example: \n      git commit -m "docs: update README with new setup instructions"`,
   rules: {
     'type-empty': [2, 'never'],
     'subject-empty': [2, 'never'],
