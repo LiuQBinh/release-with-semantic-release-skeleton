@@ -1,8 +1,9 @@
 {
   "name": "release-with-semantic-release-skeleton",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
