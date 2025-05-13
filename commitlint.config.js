@@ -3,7 +3,7 @@ module.exports = {
   helpUrl: 'https://github.com/conventional-changelog/commitlint/#what-is-commitlint',
   parserPreset: {
     parserOpts: {
-      headerPattern: /^(\w*)(?:\((.*)\))?: (.*)$/,
+      headerPattern: /^(\w*)(?:\((.*)\))?: (.*)$/, //Exampe: git commit -m "docs: add README"
       headerCorrespondence: ['type', 'scope', 'subject']
     }
   },
@@ -23,30 +23,5 @@ module.exports = {
     ]],
     'type-case': [2, 'always', 'lower-case'],
     'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']]
-  },
-  plugins: [
-    {
-      rules: {
-        'type-allowed-on-branch': (parsed, when, value) => {
-          const branchName = process.env.GITHUB_REF?.replace('refs/heads/', '') || 
-                           process.env.CI_COMMIT_REF_NAME || 
-                           require('child_process').execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
-          
-          // Define allowed types for each branch
-          const branchRules = {
-            'main': ['feat', 'fix', 'perf']
-          };
-          
-          const allowedTypes = branchRules[branchName];
-          console.log('allowedTypes', allowedTypes);
-          if (!allowedTypes) return [true];
-          
-          return [
-            allowedTypes.includes(parsed.type),
-            `Commit type "${parsed.type}" is not allowed on branch "${branchName}". Allowed types: ${allowedTypes.join(', ')}`
-          ];
-        }
-      }
-    }
-  ]
+  }
 };
