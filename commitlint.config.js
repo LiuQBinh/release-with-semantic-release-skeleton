@@ -38,6 +38,7 @@ module.exports = {
           };
           
           const allowedTypes = branchRules[branchName];
+          console.log('allowedTypes', allowedTypes);
           if (!allowedTypes) return [true];
           
           return [
