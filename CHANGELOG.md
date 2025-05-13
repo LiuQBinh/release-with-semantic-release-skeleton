@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v1.4.0...v1.5.0) (2025-05-13)
+
+
+### Features
+
+* a big feature ([e661cf8](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/e661cf8092f9d070589d13cb5414fc4a1704ee71))
+
 # [1.4.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v1.3.0...v1.4.0) (2025-05-13)
 
 
