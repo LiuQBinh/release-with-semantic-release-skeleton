@@ -8,6 +8,7 @@ module.exports = {
     'type-enum': [0],
     'type-case': [0],
     'function-rules/type-enum': [2, 'always', [
+      'feat',
       'build',
       'chore',
       'ci',
