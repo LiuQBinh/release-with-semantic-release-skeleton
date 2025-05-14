@@ -1,6 +1,6 @@
 // release.config.js
 module.exports = {
-  branches: ["main", "release/SEC-10"],
+  branches: ["main"],
   releaseRules: [
     { type: "feat", release: "minor" },
     { type: "fix", release: "patch" },
