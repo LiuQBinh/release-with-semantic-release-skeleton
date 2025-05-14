@@ -10,6 +10,7 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  statuses: write
 
 jobs:
   publish:
@@ -22,6 +23,11 @@ jobs:
         with:
           app-id: ${{ secrets.MY_RELEASER_ID }}
           private-key: ${{ secrets.MY_RELEASER_PRIVATE_KEY }}
+          permissions: |
+            contents: write
+            issues: write
+            pull-requests: write
+            statuses: write
 
       - name: Checkout
         uses: actions/checkout@v4
