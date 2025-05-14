@@ -67,8 +67,9 @@ jobs:
           git add .
           git status
           git commit -am "chore(release): $(node -p "require('./package.json').version") [skip ci]"
-          git remote set-url origin https://${{ steps.generate_token.outputs.token }}@github.com/${{ github.repository }}
-          git push
+          echo "git remote set-url origin https://x-access-token:${{ steps.generate_token.outputs.token }}@github.com/${{ github.repository }}"
+          git remote set-url origin https://x-access-token:${{ steps.generate_token.outputs.token }}@github.com/${{ github.repository }}
+          git push origin HEAD:main
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
