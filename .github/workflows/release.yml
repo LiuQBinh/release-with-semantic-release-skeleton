@@ -52,7 +52,7 @@ jobs:
           echo "NPM_TOKEN: ${{ secrets.NPM_TOKEN }}"
           echo "GIT_AUTHOR_EMAIL: ${{ steps.bot-user-id.outputs.user-id }}+${{ steps.generate_token.outputs.app-slug }}[bot]@users.noreply.github.com"
           echo "GIT_COMMITTER_EMAIL: ${{ steps.bot-user-id.outputs.user-id }}+${{ steps.generate_token.outputs.app-slug }}[bot]@users.noreply.github.com"
-          pnpm release
+          npx semantic-release --ci
           git status
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
