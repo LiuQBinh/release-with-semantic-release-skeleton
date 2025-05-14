@@ -26,6 +26,13 @@ module.exports = {
     {
       rules: {
         'function-rules/type-enum': (parsed, _, types) => {
+          // Skip validation for GitHub Actions bot commits and release commits
+          const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+          const isReleaseCommit = parsed.raw.includes('[skip ci]') || parsed.raw.startsWith('chore(release):');
+          if (isGitHubActions && isReleaseCommit) {
+            return [true, ''];
+          }
+
           const validTypes = types
             .filter(type => typeof type === 'string' || (Array.isArray(type) && type[1] !== false))
             .map(type => typeof type === 'string' ? type : type[0]);
