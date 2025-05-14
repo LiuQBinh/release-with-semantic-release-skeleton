@@ -52,6 +52,7 @@ jobs:
         run: pnpm install
 
       - name: Publish package
+        id: release
         run: |
           echo "GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
           echo "NPM_TOKEN: ${{ secrets.NPM_TOKEN }}"
@@ -65,7 +66,7 @@ jobs:
           git diff
           git add .
           git status
-          git commit -am "chore(release): ${{ nextRelease.version }} [skip ci]"
+          git commit -am "chore(release): $(node -p "require('./package.json').version") [skip ci]"
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
