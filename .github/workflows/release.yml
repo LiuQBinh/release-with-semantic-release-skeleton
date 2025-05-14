@@ -48,7 +48,7 @@ jobs:
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
       
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Publish package
         run: pnpm release
