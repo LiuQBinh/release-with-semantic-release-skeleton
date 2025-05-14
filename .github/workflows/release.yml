@@ -60,6 +60,7 @@ jobs:
           npx semantic-release --ci
           pnpm release
           git status
+          git add .
           git commit -am "chore(release): ${nextRelease.version} [skip ci]"
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
