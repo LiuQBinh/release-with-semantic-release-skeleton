@@ -1,3 +1,10 @@
+# [9.23.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.22.0...v9.23.0) (2025-05-14)
+
+
+### Features
+
+* merge branch 'main' into release/SEC-10 ([#69](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/69)) ([de64cbc](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/de64cbcd87f1699fda6ff7616cd758004ae932b7))
+
 # [9.22.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.21.0...v9.22.0) (2025-05-14)
 
 
