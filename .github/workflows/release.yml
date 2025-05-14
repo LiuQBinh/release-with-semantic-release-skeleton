@@ -70,6 +70,6 @@ jobs:
           git config --global user.email "${{ steps.bot-user-id.outputs.user-id }}+${{ steps.generate_token.outputs.app-slug }}[bot]@users.noreply.github.com"
           git add CHANGELOG.md package.json
           git commit -m "chore(release): update CHANGELOG and package.json [skip ci]"
-          git push
+          git push "https://${{ steps.generate_token.outputs.token }}@github.com/${{ github.repository }}.git"
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
