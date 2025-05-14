@@ -10,6 +10,7 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  statuses: write
 
 jobs:
   publish:
@@ -22,6 +23,11 @@ jobs:
         with:
           app-id: ${{ secrets.MY_RELEASER_ID }}
           private-key: ${{ secrets.MY_RELEASER_PRIVATE_KEY }}
+          permissions: |
+            contents: write
+            issues: write
+            pull-requests: write
+            statuses: write
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -68,13 +74,7 @@ jobs:
           git status
           git commit -am "chore(release): $(node -p "require('./package.json').version") [skip ci]"
           git remote set-url origin https://x-access-token:${{ steps.generate_token.outputs.token }}@github.com/${{ github.repository }}
-          git checkout -b release/$(node -p "require('./package.json').version")
-          git push origin release/$(node -p "require('./package.json').version")
-          gh pr create \
-            --title "chore(release): $(node -p "require('./package.json').version")" \
-            --body "This PR contains the release changes for version $(node -p "require('./package.json').version")" \
-            --base main \
-            --head release/$(node -p "require('./package.json').version")
+          git push origin HEAD:main
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
