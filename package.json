@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "release": "semantic-release"
+    "release": "semantic-release --ci",
+    "release:dry-run": "semantic-release --dry-run --ci"
   },
   "keywords": [],
   "author": "",
