@@ -1,3 +1,32 @@
+# [9.11.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.10.0...v9.11.0) (2025-05-14)
+
+
+### Features
+
+* merge branch 'main' into release/SEC-10 ([ca381b9](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/ca381b9c77a62cbebadbef492608a3523b4129d8))
+* merge branch 'main' into release/SEC-10 ([954edfc](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/954edfc261a89bfecd5fc587e221a427f7318bd7))
+* merge branch 'main' into release/SEC-10 ([4882682](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/4882682c6fa60885fe13196e93f7529736ae55f4))
+* merge branch 'main' into release/SEC-10 ([5a2628e](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/5a2628e681f5f6fd0727419c50ffe7af16eb88f4))
+* merge branch 'main' into release/SEC-10 ([eca366a](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/eca366ace7d64c8cfefa71da535c6db1b735659e))
+* merge branch 'main' into release/SEC-10 ([3b656e2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/3b656e2081e4f83fbe849573d3313183d12fd732))
+* merge branch 'main' into release/SEC-10 ([b29bf31](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/b29bf31f0d4267401a355bf4b1fcf927be92c47e))
+* merge branch 'main' into release/SEC-10 ([624ce64](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/624ce6437e0865963dce679f2ff98e9732dfd42f))
+* merge branch 'main' into release/SEC-10 ([731e89c](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/731e89cf4ab628935a6b5789efdf5f698623f206))
+* merge branch 'main' into release/SEC-10 ([ee1a9b5](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/ee1a9b52ebf41d2a102a74630b73b936d40fb21a))
+* merge branch 'main' into release/SEC-10 ([706c1e5](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/706c1e5a18cadeeb0b529c33047f6ba129ab9a48))
+* merge branch 'main' into release/SEC-10 ([7554510](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/75545100d3f2df3c130c4c16c217b6f548dc7cfb))
+* merge branch 'main' into release/SEC-10 ([4493aa9](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/4493aa9e1e075413b9d86e308fe1f074c69918c7))
+* merge branch 'main' into release/SEC-10 ([1f4b508](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/1f4b5089a69091f2f8e0a3522f8ee3f3b6851f8d))
+* merge branch 'main' into release/SEC-10 ([d3c5b10](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/d3c5b1039a6f176b631f725dbca1362e58d750f7))
+* merge branch 'main' into release/SEC-10 ([5fd7459](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/5fd7459fd485992e150a0eac9edf5839f07de561))
+* merge branch 'main' into release/SEC-10 ([0c35d94](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/0c35d94fca6e38e6e3b511a789c7886ae75b2a06))
+* merge branch 'main' into release/SEC-10 ([a013f83](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/a013f830e85d69ad5837f16fee2910b29be50f5d))
+* merge branch 'main' into release/SEC-10 ([637e553](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/637e553370ef90dcd43d933ab23e77beb91bd7ac))
+* merge branch 'main' into release/SEC-10 ([3278fb7](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/3278fb72f894c02fff3764362a8c346735cb36e6))
+* merge branch 'main' into release/SEC-10 ([9b998af](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/9b998afc78ee8937a1d874d6fab90cc7e4237c5b))
+* merge branch 'main' into release/SEC-10 ([7668d37](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/7668d37961ece9b1262773c9341022cb2e2ec4c4))
+* merge branch 'main' into release/SEC-10 ([#42](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/42)) ([f9f1778](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/f9f1778187c5c24f108406109a51e80d5495b699))
+
 ## [9.4.1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.4.0...v9.4.1) (2025-05-13)
 
 
