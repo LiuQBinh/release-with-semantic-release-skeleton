@@ -1,3 +1,12 @@
+## [9.24.6](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.24.5...v9.24.6) (2025-05-15)
+
+
+### Bug Fixes
+
+* 1 ([#79](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/79)) ([a087974](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/a0879747ee964a7f2214fdef450e100415b37cb5))
+* SEC-56 ([a5993c1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/a5993c1542cf73a14c423a212dc58b9124c384ab))
+* SEC-56 ([181ecc9](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/181ecc9245b21ec630d4c115531a2901541424ad))
+
 ## [9.24.5](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.24.4...v9.24.5) (2025-05-15)
 
 
