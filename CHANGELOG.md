@@ -1,3 +1,10 @@
+## [9.24.5](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.24.4...v9.24.5) (2025-05-15)
+
+
+### Bug Fixes
+
+* 1 ([#78](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/78)) ([f2003af](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/f2003af41d9cf658ed66beb90458f4205f648289))
+
 ## [9.24.2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.24.1...v9.24.2) (2025-05-14)
 
 
