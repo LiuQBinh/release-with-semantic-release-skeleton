@@ -1,6 +1,6 @@
 {
   "name": "release-with-semantic-release-skeleton",
-  "version": "9.24.2",
+  "version": "9.24.5",
   "description": "",
   "main": "index.js",
   "private": true,
