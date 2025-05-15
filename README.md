@@ -17,6 +17,7 @@ This project implements an automated release workflow that:
 - Generates and updates changelog
 - Ensures consistent versioning across your project
 
+
 ## ✨ Features
 
 - **Automated Versioning**: Version numbers are automatically determined based on commit messages
