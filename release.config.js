@@ -1,6 +1,6 @@
 // release.config.js
 module.exports = {
-  branches: ["main", "release/SEC-10"],
+  branches: ["main"],
   releaseRules: [
     { type: "feat", release: "minor" },
     { type: "fix", release: "patch" },
@@ -15,11 +15,11 @@ module.exports = {
       npmPublish: false, // Set true if you want to publish to npm
     }],
 
-    // ["@semantic-release/git", {
-    //   assets: ["CHANGELOG.md", "package.json"],
-    //   message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
-    // }],
-    
+    ["@semantic-release/git", {
+      assets: ["CHANGELOG.md", "package.json"],
+      message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+    }],
+
     "@semantic-release/github"
   ],
 };
