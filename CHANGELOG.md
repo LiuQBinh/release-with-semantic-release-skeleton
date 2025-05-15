@@ -1,3 +1,17 @@
+## [9.24.2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.24.1...v9.24.2) (2025-05-14)
+
+
+### Bug Fixes
+
+* 1 ([#75](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/75)) ([5d85bc2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/5d85bc268fa16657717fb8ea95c119994d1cb1ce))
+
+# [9.24.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.23.0...v9.24.0) (2025-05-14)
+
+
+### Features
+
+* merge branch 'main' into release/SEC-10 ([#73](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/73)) ([57f27c0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/57f27c0f12d5b5b5aba7a86bae74e5dbb2ccd79a))
+
 # [9.22.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.21.0...v9.22.0) (2025-05-14)
 
 
