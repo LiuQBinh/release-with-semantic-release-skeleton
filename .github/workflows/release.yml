@@ -22,7 +22,7 @@ jobs:
 
       - name: Read Node version from package.json
         id: node-version
-        run: echo "NODE_VERSION=$(node -p "require('./package.json').engines.node")"
+        run: echo "NODE_VERSION=$(node -p "require('./package.json').engines.node")" >> $GITHUB_OUTPUT
 
       - name: Debug Node version
         run: echo "Node version from output: ${{ steps.node-version.outputs.NODE_VERSION }}"
