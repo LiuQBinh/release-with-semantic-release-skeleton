@@ -9,6 +9,9 @@ valid_ng=0
 invalid_ok=0
 invalid_ng=0
 
+# Create and switch to temporary test branch
+git checkout -b test-commit-messages 2>/dev/null
+
 test_commit() {
     local is_valid=$2
     echo -e "\nTesting: $1"
@@ -86,4 +89,8 @@ echo "NG: $valid_ng/8 cases"
 echo
 echo "invalid cases"
 echo "OK: $invalid_ng/18 cases"
-echo "NG: $invalid_ok/18 cases" 
+echo "NG: $invalid_ok/18 cases"
+
+# Cleanup: switch back to main branch and delete test branch
+git checkout main 2>/dev/null
+git branch -D test-commit-messages 2>/dev/null 
