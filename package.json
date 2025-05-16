@@ -1,29 +1,59 @@
 {
-  "name": "release-with-semantic-release-skeleton",
-  "version": "9.24.6",
+  "name": "seconder.ai",
+  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "private": true,
   "engines": {
     "node": "23.11.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "release": "semantic-release --ci",
-    "release:dry-run": "semantic-release --dry-run --ci"
+    "prestart:default": "$NVM_DIR/versions/node/v$npm_package_engines_node/bin/pnpm up",
+    "prestart:windows": "%NVM_HOME%/v%npm_package_engines_node%/pnpm up",
+    "prestart": "node run-script-os.cjs",
+    "start": "pnpm run prestart && turbo run start --concurrency=50",
+    "preturbo": "rm -rf ./out",
+    "turbo:prune": "pnpm run preturbo && turbo prune --docker",
+    "lint:js": "turbo run lint:js --",
+    "lint:css": "turbo run lint:css --",
+    "lint": "eslint --fix",
+    "release": "semantic-release --ci"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.11.0",
   "devDependencies": {
-    "@commitlint/config-conventional": "^19.8.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^12.0.1",
-    "commitlint": "^19.8.1",
+    "semantic-release": "^24.2.3",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@sec/eslint-config": "workspace:*",
+    "@sec/tsconfig": "workspace:*",
+    "@turbo/gen": "^2.5.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
     "husky": "^9.1.7",
-    "semantic-release": "^24.2.3"
-  }
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "stylelint": "16.17.0",
+    "turbo": "^2.5.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "turbo": "2.5.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss,less}": [
+      "stylelint --fix"
+    ]
+  },
+  "type": "module"
 }

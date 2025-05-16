@@ -1,1 +1,2 @@
-
+echo root pre commit
+pnpm lint-staged --relative true
