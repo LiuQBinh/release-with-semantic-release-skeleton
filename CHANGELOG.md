@@ -1,3 +1,17 @@
+# [11.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v10.0.0...v11.0.0) (2025-05-16)
+
+
+### Bug Fixes
+
+* SEC-55 prepare release ([e66b009](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/e66b009e848dc1b9a16546ae25c5100fd04214e7))
+
+
+### BREAKING CHANGES
+
+* true
+
+TEST
+
 # [10.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v9.25.0...v10.0.0) (2025-05-16)
 
 
