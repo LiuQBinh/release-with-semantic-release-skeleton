@@ -1,0 +1,17 @@
+{
+  "name": "@sec/stylelint-config",
+  "version": "1.0.0",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./*": "./*"
+  },
+  "devDependencies": {
+    "postcss-styled-syntax": "0.7.1",
+    "stylelint": "16.17.0",
+    "stylelint-config-standard": "37.0.0"
+  },
+  "type": "module"
+}

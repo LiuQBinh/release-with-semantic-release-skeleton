@@ -1,0 +1,9 @@
+{
+  "extends": "@create-figma-plugin/tsconfig",
+  "compilerOptions": {
+    "target": "ESNext",
+    "typeRoots": ["node_modules/@figma", "node_modules/@types"],
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@sec/gui-i18n-localization",
+  "version": "1.0.0",
+  "engines": {
+    "node": "23.11.0"
+  },
+  "private": true,
+  "scripts": {
+    "lint:js": "eslint --fix",
+    "lint:css": "stylelint --fix --allow-empty-input"
+  },
+  "devDependencies": {
+    "@sec/eslint-config": "workspace:*",
+    "@sec/stylelint-config": "workspace:*",
+    "@sec/tsconfig": "workspace:*"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "extends": "@sec/tsconfig/nestjs.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "plugins": [
+      {
+        "name": "@nestjs/swagger",
+        "options": {
+          "introspectComments": true
+        }
+      }
+    ]
+  },
+  "references": [
+    { "path": "../../../packages/share" }
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "references": [
+    {"path": "../share"}
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ]
+}

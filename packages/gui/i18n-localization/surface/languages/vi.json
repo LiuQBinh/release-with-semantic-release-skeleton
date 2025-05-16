@@ -1,0 +1,21 @@
+
+{
+  "HomePage": {
+    "title": "Trang chủ",
+    "about": "Đi đến trang about",
+    "home": "Trang chủ",
+    "description": "Đây là trang chủ. Bạn có thể thêm nhiều nội dung vào đây.",
+    "about-title": "Trang about",
+    "about-description": "Đây là trang about. Bạn có thể liên hệ với tôi qua email: nguyenvanquang@gmail.com"
+  },
+  "AboutPage": {
+    "hero-title": "Chào, tôi là Quang",
+    "hero-description": "Tôi là một kỹ sư phần mềm có niềm đam mê xây dựng hệ thống tỷ lệ và hiệu quả. Tôi đang làm việc làm kỹ sư phần mềm tại Seconder. Tôi cũng là thành viên của đội Seconder.",
+    "hero-button": "Liên hệ tôi"
+  },
+  "GlobalError": {
+    "title": "Lỗi máy chủ nội bộ",
+    "description": "Có sự cố xảy ra ở phía chúng tôi. Chúng tôi đang nỗ lực khắc phục.",
+    "try-again": "Thử lại"
+  }
+}

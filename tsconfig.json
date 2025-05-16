@@ -1,0 +1,13 @@
+{
+  "extends": "@sec/tsconfig/base.json",
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "exclude": [
+    "**/*.js",
+    "**/*.mjs",
+    "**/*.cjs",
+    "**/dist/**",
+    "**/node_modules/**",
+  ]
+}

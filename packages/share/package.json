@@ -1,0 +1,42 @@
+{
+  "name": "@seconder/share",
+  "version": "1.0.0",
+  "description": "Shared utilities for Seconder.ai applications",
+  "scripts": {
+    "prestart": "rimraf dist",
+    "start:done": "echo 'start done' >> ./dist/tmp.txt",
+    "start": "tsc && pnpm run start:done",
+    "start:wait": "wait-on ./dist/tmp.txt && rm ./dist/tmp.txt",
+    "aws:build": "tsc"
+  },
+  "exports": {
+    "./*": [
+      "./dist/src/*.js",
+      "./dist/src/*/index.js"
+    ]
+  },
+  "types": "./dist/src/**/*.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/src/*.d.ts",
+        "dist/src/*/index.d.ts"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@sec/eslint-config": "workspace:*",
+    "@nestjs/common": "^10.0.0",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^9.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+
+{
+  "HomePage": {
+    "title": "Home Page Ne Huynh Test",
+    "about": "Go to the about page",
+    "description": "This is the home page. You can add more content to this page.",
+    "home": "Home",
+    "about-title": "About Page",
+    "about-description": "This is the about page. You can contact me via email: nguyenvanquang@gmail.com"
+  },
+  "AboutPage": {
+    "hero-title": "Hi, I'm Quang",
+    "hero-description": "I'm a software engineer with a passion for building scalable and efficient systems. I'm currently working as a software engineer at Seconder. I'm also a member of the Seconder team.",
+    "hero-button": "Contact me"
+  },
+  "GlobalError": {
+    "title": "Internal Server Error",
+    "description": "Something went wrong on our end. We're working to fix it.",
+    "try-again": "Try again"
+  }
+}

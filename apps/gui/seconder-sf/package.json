@@ -1,0 +1,53 @@
+{
+  "name": "gui.seconder-sf",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "TURBOPACK=1 NODE_ENV=development nodemon server/index.js",
+    "aws:build": "next build",
+    "preview": "next start",
+    "lint": "next lint",
+    "lint:js": "eslint --fix",
+    "lint:css": "stylelint --fix --allow-empty-input"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.0",
+    "@radix-ui/react-switch": "^1.1.4",
+    "@sec/gui-seconder": "workspace:*",
+    "@sec/gui-i18n-localization": "workspace:*",
+    "@radix-ui/react-toast": "^1.2.11",
+    "@seconder/share": "workspace:*",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "immer": "^10.1.1",
+    "lodash": "4.17.21",
+    "lucide-react": "^0.487.0",
+    "next": "15.3.1-canary.4",
+    "next-intl": "^4.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.2.0",
+    "tw-animate-css": "^1.2.5",
+    "use-intl": "^4.0.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@sec/tsconfig": "workspace:*",
+    "@sec/eslint-config": "workspace:*",
+    "@sec/stylelint-config": "workspace:*",
+    "@tailwindcss/postcss": "^4",
+    "@types/lodash": "4.17.16",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "stylelint-config-tailwindcss": "^1.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

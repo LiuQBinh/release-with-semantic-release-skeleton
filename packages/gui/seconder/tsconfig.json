@@ -1,0 +1,24 @@
+{
+  "extends": "@sec/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@sec/gui-seconder/*": ["./*"]
+    }
+  },
+  "include": [
+    ".",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "stylelint.config.js"
+  ],
+  "exclude": ["node_modules"]
+}

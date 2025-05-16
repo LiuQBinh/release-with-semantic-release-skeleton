@@ -1,0 +1,58 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "start": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": [
+        "^start:wait"
+      ]
+    },
+    "start:wait": {
+      "cache": false,
+      "dependsOn": ["^start:wait"],
+      "persistent": false
+    },
+    "aws:build": {
+      "cache": false,
+      "persistent": false,
+      "dependsOn": [
+        "^aws:build"
+      ]
+    },
+    "lint:css": {
+      "cache": false,
+      "persistent": false
+    },
+    "lint:js": {
+      "cache": false,
+      "persistent": false
+    },
+    "test:gen": {
+      "cache": false,
+      "persistent": false
+    },
+    "test:run": {
+      "cache": false,
+      "persistent": false
+    },
+    "test:build": {
+      "cache": false,
+      "persistent": false
+    },
+    "start:built": {
+      "cache": false,
+      "persistent": false
+    }
+  },
+  "ui": "tui",
+  "globalEnv": [
+    "ENV",
+    "NODE_ENV",
+    "npm_package_name",
+    "npm_package_engines_node",
+    "NVM_DIR",
+    "NVM_HOME"
+  ]
+}
+

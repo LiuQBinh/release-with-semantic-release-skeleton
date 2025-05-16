@@ -1,0 +1,30 @@
+{
+  "name": "figma-tool",
+  "version": "0.0.1",
+  "dependencies": {
+    "@create-figma-plugin/ui": "^4.0.0",
+    "@create-figma-plugin/utilities": "^4.0.0",
+    "culori": "^4.0.0",
+    "preact": "^10.26.5"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^4.0.0",
+    "@create-figma-plugin/tsconfig": "^4.0.0",
+    "@figma/plugin-typings": "1.79.0",
+    "@types/culori": "^2.1.1",
+    "typescript": ">=4"
+  },
+  "scripts": {
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch"
+  },
+  "figma-plugin": {
+    "editorType": [
+      "figma"
+    ],
+    "id": "hello-world",
+    "name": "SEC Internal Tool",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx"
+  }
+}
