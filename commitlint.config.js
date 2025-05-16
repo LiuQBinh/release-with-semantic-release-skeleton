@@ -21,7 +21,6 @@ export default {
         'chore',
         'ci',
         /^SEC-\d+/i,
-        /^release\/SEC-\d+/i,
       ],
     ],
   },
