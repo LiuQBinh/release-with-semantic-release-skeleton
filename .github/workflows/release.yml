@@ -6,10 +6,10 @@ on:
       - main
 
 permissions:
+  # contents: write permission allows:
+  # - pushing tags
+  # - creating releases
   contents: write
-  issues: write
-  pull-requests: write
-  statuses: write
 
 jobs:
   publish:
