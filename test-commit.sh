@@ -25,7 +25,6 @@ test_commit "style: SEC-444 update code style"
 test_commit "test: SEC-555 add new tests"
 test_commit "refactor: SEC-666 refactor code"
 test_commit "SEC-123 fix critical bug"
-test_commit "release/SEC-123 prepare release"
 
 # Invalid cases
 echo -e "\nTesting invalid commit types:"
@@ -52,6 +51,7 @@ echo -e "\nTesting invalid release format:"
 test_commit "release-SEC-123 prepare release"
 test_commit "release/SEC123 prepare release"
 test_commit "release/SEC_123 prepare release"
+test_commit "release/SEC-123 prepare release"
 
 # Cleanup
 rm test.txt 
