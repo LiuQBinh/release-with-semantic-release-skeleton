@@ -9,14 +9,15 @@ valid_ng=0
 invalid_ok=0
 invalid_ng=0
 
-# Create a test file
-echo "test" > test.txt
-
 test_commit() {
     local is_valid=$2
     echo -e "\nTesting: $1"
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    # Stage only test.txt and ignore other changes
+    
+    # Create test file for this test
+    echo "test" > test.txt
+    
+    # Stage and commit
     git add test.txt
     if git commit -m "$1" 2>&1; then
         if [ "$is_valid" = "valid" ]; then
@@ -31,8 +32,10 @@ test_commit() {
             invalid_ng=$((invalid_ng + 1))
         fi
     fi
-    # Reset only the test.txt commit
-    git reset --hard origin
+    
+    # Reset only the commit, keep the working directory
+    git reset HEAD~1 2>/dev/null
+    rm -f test.txt
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 }
 
@@ -73,9 +76,6 @@ test_commit "release-SEC-123 prepare release" "invalid"
 test_commit "release/SEC123 prepare release" "invalid"
 test_commit "release/SEC_123 prepare release" "invalid"
 test_commit "release/SEC-123 prepare release" "invalid"
-
-# Cleanup
-rm test.txt
 
 # Print summary
 echo -e "\nTest Summary:"
