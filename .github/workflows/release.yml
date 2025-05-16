@@ -27,7 +27,7 @@ jobs:
           echo "NODE_VERSION=$NODE_VERSION" >> $GITHUB_OUTPUT
 
       - name: Debug Node version
-        run: echo steps.pnpm-version.outputs.NODE_VERSION
+        run: echo $steps.pnpm-version.outputs.NODE_VERSION
 
       - name: Read pnpm version from package.json
         id: pnpm-version
@@ -36,7 +36,7 @@ jobs:
           echo "PNPM_VERSION=$PNPM_VERSION" >> $GITHUB_OUTPUT
 
       - name: Debug pnpm version
-        run: echo steps.pnpm-version.outputs.PNPM_VERSION
+        run: echo $steps.pnpm-version.outputs.PNPM_VERSION
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
