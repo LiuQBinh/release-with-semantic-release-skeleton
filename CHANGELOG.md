@@ -1,3 +1,10 @@
+## [12.0.2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v12.0.1...v12.0.2) (2025-05-16)
+
+
+### Bug Fixes
+
+* SEC-123 API interface has ([#80](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/80)) ([#81](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/81)) ([f03b828](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/f03b828b87a1374d4a42c22a6262dab8afb2b9b1))
+
 ## [12.0.1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v12.0.0...v12.0.1) (2025-05-16)
 
 
