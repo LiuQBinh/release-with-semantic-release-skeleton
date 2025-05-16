@@ -1,3 +1,10 @@
+## [12.0.3](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v12.0.2...v12.0.3) (2025-05-16)
+
+
+### Bug Fixes
+
+* SEC-123 add permission ([239a88c](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/239a88c7ac16133261c7acf38e6c4bdff0908e43))
+
 ## [12.0.2](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v12.0.1...v12.0.2) (2025-05-16)
 
 
