@@ -5,7 +5,7 @@ export default {
     { type: 'feat', release: 'minor' },
     { type: 'fix', release: 'patch' },
     { type: 'perf', release: 'patch' },
-    { breaking: true, release: 'major', type: 'feat' },
+    { breaking: true, release: 'major' },
   ],
   plugins: [
     '@semantic-release/commit-analyzer',
