@@ -19,11 +19,11 @@ test_commit() {
 echo "Testing valid commit messages:"
 test_commit "docs: SEC-123 API interface has"
 test_commit "docs(surface): SEC-123 API interface has"
+test_commit "style: SEC-444 update code style"
+test_commit "refactor: SEC-666 refactor code"
+test_commit "test: SEC-555 add new tests"
 test_commit "chore: SEC-101 update dependencies"
 test_commit "ci: SEC-333 update CI pipeline"
-test_commit "style: SEC-444 update code style"
-test_commit "test: SEC-555 add new tests"
-test_commit "refactor: SEC-666 refactor code"
 test_commit "SEC-123 fix critical bug"
 
 # Invalid cases
