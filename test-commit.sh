@@ -11,7 +11,7 @@ test_commit() {
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     git add test.txt
     git commit -m "$1" 2>&1
-    git reset HEAD~1 2>/dev/null
+    git reset --hard origin
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 }
 
