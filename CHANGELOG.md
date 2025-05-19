@@ -1,3 +1,15 @@
+# [14.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v13.0.1...v14.0.0) (2025-05-19)
+
+
+### Performance Improvements
+
+* 1111 ([155e79d](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/155e79dee1cba0c393479fbcf29d9c58d156ee98)), closes [#85](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/85)
+
+
+### BREAKING CHANGES
+
+* abc
+
 ## [13.0.1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v13.0.0...v13.0.1) (2025-05-19)
 
 

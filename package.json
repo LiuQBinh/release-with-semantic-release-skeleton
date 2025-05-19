@@ -1,6 +1,6 @@
 {
   "name": "seconder.ai",
-  "version": "13.0.1",
+  "version": "14.0.0",
   "description": "",
   "engines": {
     "node": "23.11.0"
