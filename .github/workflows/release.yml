@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     # trigger release only when commit message contains feat:, fix:, perf:
     if: |
-      startsWith(github.event.head_commit.message, 'feat:') ||
-      startsWith(github.event.head_commit.message, 'fix:') ||
-      startsWith(github.event.head_commit.message, 'perf:')
+      startsWith(github.event.head_commit.message, 'feat') ||
+      startsWith(github.event.head_commit.message, 'fix') ||
+      startsWith(github.event.head_commit.message, 'perf')
 
     steps:
       - name: Checkout
