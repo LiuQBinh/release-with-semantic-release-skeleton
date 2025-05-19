@@ -1,3 +1,21 @@
+# [13.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v12.0.3...v13.0.0) (2025-05-19)
+
+
+### Bug Fixes
+
+* 1 ([d7a1086](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/d7a1086e693c17f77efb4e7e760240d9cb4a351f))
+
+
+### Performance Improvements
+
+* **pencil:** remove graphiteWidth option ([ebb3412](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/ebb34128efc4b00fbc1d4430599a03644f81768e))
+
+
+### BREAKING CHANGES
+
+* The graphiteWidth option has been removed.
+* **pencil:** The graphiteWidth option has been removed.
+
 ## [12.0.3](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v12.0.2...v12.0.3) (2025-05-16)
 
 
