@@ -1,3 +1,10 @@
+## [13.0.1](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v13.0.0...v13.0.1) (2025-05-19)
+
+
+### Bug Fixes
+
+* 1 ([#85](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/85)) ([#86](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/issues/86)) ([21d7133](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/commit/21d7133e1c64f991a1f8a55379841fbcad2b7a3b))
+
 # [13.0.0](https://github.com/LiuQBinh/release-with-semantic-release-skeleton/compare/v12.0.3...v13.0.0) (2025-05-19)
 
 
